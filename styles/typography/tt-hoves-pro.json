@@ -1,0 +1,42 @@
+{
+    "version": 3,
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "title": "tt hoves pro",
+    "slug": "typography-tt-hoves-pro",
+    "settings": {
+        "typography": {
+            "fontFamilies": [
+                {
+                    "fontFamily": "tt-hoves-pro-trial, sans-serif",
+                    "name": "Tt-hoves-pro-trial",
+                    "slug": "first",
+                    "fontFace": [
+                        {
+                            "fontFamily": "tt-hoves-pro-trial",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/tt-hoves-pro-trial/tt-hoves-pro-trial-variable.woff2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fontFamily": "tt-hoves-pro-trial, sans-serif",
+                    "name": "Tt-hoves-pro-trial",
+                    "slug": "second",
+                    "fontFace": [
+                        {
+                            "fontFamily": "tt-hoves-pro-trial",
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "src": [
+                                "file:./assets/fonts/tt-hoves-pro-trial/tt-hoves-pro-trial-variable.woff2"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

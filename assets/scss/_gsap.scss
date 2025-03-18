@@ -1,0 +1,31 @@
+
+.card-focus__content{
+    transition: 1s background ease-in-out, 2s box-shadow;
+}
+.card-focus__number{
+    z-index: 10;
+    position: relative;
+}
+.is-style-dashed{
+    --after-size :4px;
+    position: relative;
+    background-size: var(--after-size);
+    &:after{
+        content:"";
+        height: 0;
+        width: var(--after-size);
+        display: block;
+        position: absolute;
+        top: 0;
+        //pour inverser le sens
+        //bottom :0;
+        left: 50%;
+        transform:translateX(-50%);
+        background-color: var(--wp--preset--color--accent);
+        transition: 1s height;
+        .card-focus__container.active &{
+            height: 100%;
+        }
+    }
+
+}

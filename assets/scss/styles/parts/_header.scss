@@ -1,0 +1,13 @@
+header.wp-block-template-part{
+    >.wp-block-group:last-of-type{
+        position: relative;
+       &:after{
+        content:"";
+        height: 10px;
+        background:linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(0,0,0,.1) 100%);
+        position: absolute;left: 0;right: 0;
+        bottom: 0;
+        transform: translateY(100%);
+       }
+    }
+}

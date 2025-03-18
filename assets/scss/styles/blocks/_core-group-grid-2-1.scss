@@ -1,0 +1,26 @@
+.wp-block-group{
+    &.is-style-grid-2-1{
+        
+        @include p(600){
+            gap:0;
+                >.wp-block-group:nth-last-of-type(1):not(:has(figure)){
+                    padding-left: 4.5rem;
+                }
+                >.wp-block-group:nth-last-of-type(2):not(:has(figure)){
+                    padding-right: 4.5rem;
+                }
+        }
+        @include m(600){
+         display: flex;
+         flex-wrap: wrap;
+            >.wp-block-group{
+                width: 100%;
+                order:2;
+                &:has(figure){
+                    order:1;
+                }
+                
+            }
+        }
+    }
+}
